@@ -33,5 +33,42 @@
      <div class="container text-center mt-4">
         <h1 class="display-4">My<span class="text-primary">Contact</span></h1>
     </div>
+     <!-- Formulaire d'ajout de contact -->
+     <form class="mx-5">
+        <div class="form-group mt-4">
+            <label for="exampleInputNom1">Nom</label>
+            <input type="text" class="form-control" id="exampleInputNom1" placeholder="Entrez le nom">
+            <span id="nom-error" class="error">Le nom est requis.</span>
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleInputPrenom1">Prenom</label>
+            <input type="text" class="form-control" id="exampleInputPrenom1" placeholder="Entrez le prénom">
+            <span id="prenom-error" class="error">Le prénom est requis.</span>
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <span id="email-error" class="error">L'email est requis.</span>
+            <span id="email-format-error" class="error">Le format du email doit être name@exemple.com</span>
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleInputTelephone1">Téléphone</label>
+            <input type="tel" class="form-control" id="exampleInputTelephone1" placeholder="Téléphone (ex : 0645789000)">
+            <span id="telephone-error" class="error">Le téléphone est requis.</span>
+            <span id="telephone-format-error" class="error">Le format du téléphone doit être 0645789000.</span>
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleInputVille1">Ville</label>
+            <select class="form-select" id="exampleInputVille1">
+                <option selected>Choisissez la ville</option>
+                <option value="1">Rabat</option>
+                <option value="2">Casablanca</option>
+                <option value="3">Marrakech</option>
+            </select>
+        </div>
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary col-6">Submit</button>
+        </div>
+    </form>
 </body>
 </html>
