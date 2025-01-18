@@ -30,6 +30,9 @@ function validateForm() {
                 document.getElementById("prenom-error").style.display = "block";
                 isValid = false;
               } 
-               
+        if (telephone === "") {
+                document.getElementById("telephone-error").style.display = "block";
+                isValid = false;
+              }       
             return isValid;
         }
