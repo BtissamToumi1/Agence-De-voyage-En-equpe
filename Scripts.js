@@ -26,5 +26,10 @@ function validateForm() {
               document.getElementById("nom-error").style.display= "block"; // Afficher l'erreur
               isValid = false;
             } 
+        if (prenom === "") {
+                document.getElementById("prenom-error").style.display = "block";
+                isValid = false;
+              } 
+               
             return isValid;
         }
