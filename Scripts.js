@@ -5,6 +5,39 @@ const telephoneinput=document.querySelector("#exampleInputTelephone1");
 const emailinput=document.querySelector("#exampleInputEmail1");
 const buutton=document.querySelector(".btn");
 const contactlist=document.querySelector("#contact-list");
+buutton.addEventListener("click",function(event){
+      
+    event.preventDefault();
+     if(validateForm()){
+  if(nominput.value=="" && prenominput.value=="" && telephoneinput.value==""){
+    alert("Entrez any input");
+  }else{
+    // recuperation des donnes de nom
+    const contactlistRow=document.createElement("tr");
+    const newNom=document.createElement("th");
+    newNom.innerHTML=nominput.value;
+    contactlistRow.appendChild(newNom);
+    // recuperation des donnes de prenom
+    const newPrenom=document.createElement("th");
+    newPrenom.innerHTML=prenominput.value;
+    contactlistRow.appendChild(newPrenom);
+     // recuperation des donnes de telephone
+     const newTelephone=document.createElement("th");
+     newTelephone.innerHTML=telephoneinput.value;
+     contactlistRow.appendChild(newTelephone);
+     contactlist.appendChild(contactlistRow);
+
+      // Vider les champs après ajout
+      nominput.value = "";
+      prenominput.value = "";
+      telephoneinput.value = "";
+      emailinput.value= "";
+  }
+  }
+// else{
+//        alert("le formulaire n'est pas valide")
+//    }
+}); 
 // Fonction de validation
 buutton.addEventListener("click",validateForm());
 function validateForm() {
