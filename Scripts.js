@@ -33,6 +33,16 @@ function validateForm() {
         if (telephone === "") {
                 document.getElementById("telephone-error").style.display = "block";
                 isValid = false;
-              }       
+              } 
+         //  Verfier le format du email
+       if (emailinput=== "") {
+        document.getElementById("email-error").style.display = "block";
+        isValid = false;
+      }
+ //      const emailRegex = /^[a-zA-Z0-9.]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+ //      if ( !emailinput== "" && !emailRegex.test(telephone)) {
+ //        document.getElementById("email-format-error").style.display = "block";
+ //        isValid = false;
+ // }               
             return isValid;
         }
