@@ -12,3 +12,24 @@ li {
 li:hover{
     background-color: rgba(114, 178, 238, 0.5);
 }
+/* le style pour la page Add contact */
+.container{
+    margin-top: 200px;
+    margin-left: 400px;
+    width: auto;
+     height: 650px;
+     background-color: antiquewhite;
+     border-radius: 20px;
+     background-color: rgba(200, 200, 227,0.5);
+     box-sizing: border-box;
+ }
+ #pagehome{
+    background-color:#40A2D8;
+   }
+   .text-primary{
+    color:  #0B60B0;
+  
+   }
+   .custom-shadow{
+    box-shadow: 4px 5px 10px #0B60B0;
+   }
