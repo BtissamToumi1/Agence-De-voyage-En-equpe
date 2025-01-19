@@ -4,3 +4,11 @@ body{
     height: 100%; /* Nécessaire pour que les éléments enfants puissent prendre 100% */
     width: 100%;
 }
+li {
+    padding-left: 55px;
+    padding-right: 55px;
+    
+}
+li:hover{
+    background-color: rgba(114, 178, 238, 0.5);
+}
