@@ -2,9 +2,13 @@ body{
     margin: 0;
     padding: 0;
     height: 100%; /* Nécessaire pour que les éléments enfants puissent prendre 100% */
+    /* background-image: url(image/abstract-textured-backgound.jpg); */
+    background-size: cover; /* Pour ajuster l'image à la taille de la page */
+    background-repeat: no-repeat;
     width: 100%;
 }
-li {
+
+ li {
     padding-left: 55px;
     padding-right: 55px;
     
@@ -12,8 +16,17 @@ li {
 li:hover{
     background-color: rgba(114, 178, 238, 0.5);
 }
+a {
+  padding-left: 55px;
+  padding-right: 55px;
+  
+}
+a:hover{
+  background-color: rgba(114, 178, 238, 0.5);
+}
+
 /* le style pour la page Add contact */
-.container{
+.container.custom-container{
     margin-top: 200px;
     margin-left: 400px;
     width: auto;
@@ -23,13 +36,22 @@ li:hover{
      background-color: rgba(200, 200, 227,0.5);
      box-sizing: border-box;
  }
+ 
+ .buttonn{
+    padding-left: 400px;
+ }
  #pagehome{
-    background-color:#40A2D8;
-   }
-   .text-primary{
-    color:  #0B60B0;
-  
-   }
-   .custom-shadow{
-    box-shadow: 4px 5px 10px #0B60B0;
-   }
+  background-color:#40A2D8;
+ }
+ 
+
+ .text-primary{
+  color:  #0B60B0;
+
+ }
+ .custom-shadow{
+  box-shadow: 4px 5px 10px #0B60B0;
+ }
+
+ 
+
